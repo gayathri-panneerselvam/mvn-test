@@ -20,6 +20,7 @@ pipeline {
             steps {
                 sh 'mvn web3j:generate-sources'
                 sh 'mvn install'
+                sh 'pwd'
                   }
         }
 
