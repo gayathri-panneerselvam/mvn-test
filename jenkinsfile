@@ -25,7 +25,7 @@ pipeline {
         }
         stage(deploy){
             steps {
-                sh 'sudo cp target/sample-project-maven-1.0.0-SNAPSHOT.jar /opt/tomcat/apache-tomcat-7.0.99/webapps/'
+                sh 'sudo -t cp target/sample-project-maven-1.0.0-SNAPSHOT.jar /opt/tomcat/apache-tomcat-7.0.99/webapps/'
                   }
         }
     }
