@@ -23,6 +23,10 @@ pipeline {
                 sh 'pwd'
                   }
         }
-
+        stage(deploy){
+            steps {
+                sh 'cp target/sample-project-maven-1.0.0-SNAPSHOT.jar /opt/tomcat/apache-tomcat-7.0.99/webapps/'
+                  }
+        }
     }
 }
